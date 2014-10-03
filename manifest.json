@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "RBM Github Dashboard",
+  "description" : "RBM Github Username Dashboard",
+  "version" : "1.0",
+
+  "permissions": [
+    "https://github.com/login/oauth/authorize"
+  ],
+  "chrome_url_overrides" : {
+        "newtab": "index.html"
+    }
+}
