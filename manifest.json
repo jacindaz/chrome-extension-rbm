@@ -4,9 +4,15 @@
   "name": "RBM Github Dashboard",
   "description" : "RBM Github Username Dashboard",
   "version" : "1.0",
-
+//   "content_scripts": [
+//   {
+//     "matches": ["http://www.google.com/robots.txt*"],
+//     "js": ["oauth2/oauth2_inject.js"],
+//     "run_at": "document_start"
+//   }
+// ],
   "permissions": [
-    "https://github.com/login/oauth/authorize"
+    "https://github.com/login/oauth/authorize/token"
   ],
   "chrome_url_overrides" : {
         "newtab": "index.html"
