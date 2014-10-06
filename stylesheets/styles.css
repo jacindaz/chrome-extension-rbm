@@ -1,0 +1,24 @@
+/*** RBM Dark Blue color: #243c7c ***/
+
+.long-background{
+	background-image:-webkit-gradient(linear, 50% 0%, 50% 400, color-stop(10%, #243c7c), color-stop(75%, #5db5f1), color-stop(100%, #fff));
+	background-image:-webkit-linear-gradient(#243c7c 40px, #5db5f1 300px, #fff 400px);
+	background-image:-moz-linear-gradient(#243c7c 40px, #5db5f1 300px, #fff 400px);
+	background-image:-o-linear-gradient(#243c7c 40px, #5db5f1 300px, #fff 400px);
+	background-image:linear-gradient(#243c7c 40px,#5db5f1 300px,#ffffff 400px);
+}
+
+#inner-container {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding:20px;
+	color:white;
+	background-color:#243c7c;
+}
