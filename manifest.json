@@ -11,10 +11,19 @@
 //     "run_at": "document_start"
 //   }
 // ],
-  "permissions": [
-    "https://github.com/login/oauth/authorize/token"
+  "permissions": [ "tabs", "https://docs.google.com/feeds/*",
+    "https://www.google.com/accounts/OAuthGetRequestToken",
+    "https://www.google.com/accounts/OAuthAuthorizeToken",
+    "https://www.google.com/accounts/OAuthGetAccessToken"
   ],
+  // "permissions": [
+  //   "https://github.com/login/oauth/authorize/token"
+  // ],
   "chrome_url_overrides" : {
         "newtab": "index.html"
-    }
+    },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
 }
