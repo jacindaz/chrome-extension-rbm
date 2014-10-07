@@ -1,21 +1,11 @@
-$.ajax({
-    dataType: "json",
-    url: "http://api.wunderground.com/api/844ce94be6db44dd/conditions/q/MA/Boston.json",
-    success: function(json) {
-        wundergroundSuccess();
-        console.log("JSON: " + json + "\n");
-        console.log("Current Temperature: " + json["current_observation"]["temperature_string"]);
-        document.getElementById('weather').innerHTML += (json["current_observation"]["temperature_string"])
-    },
-    error: function(e) { wundergroundFailure() }
+OAuth.initialize("FNFvZeTMr7igUlJBATyn4zaWPyI");
+
+//Using popup (option 1)
+var results = OAuth.popup('github')
+results.done(function(result) {
+  //use result.access_token in your API request 
+  //or use result.get|post|put|del|patch|me methods (see below)
+})
+results.fail(function (err) {
+  //handle error with err
 });
-
-function wundergroundSuccess() {
-    console.log("Weather ajax success");
-    // alert("Weather ajax success");
-}
-
-function wundergroundFailure() {
-    console.log("Unable to call Wunderground API.");
-    alert("Unable to call Wunderground API.");
-}

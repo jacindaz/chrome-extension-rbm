@@ -1,5 +1,3 @@
-OAuth.initialize('a709ca6b51eb6c1acbc952747c0f400ec7e0a57b');
-
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = {
   oauthd_url: "https://oauth.io",
@@ -163,7 +161,7 @@ module.exports = function(window, document, jQuery, navigator) {
           var defer, frm, getMessage, gotmessage, interval, res, url, wnd, wndTimeout, wnd_options, wnd_settings, _ref;
           gotmessage = false;
           getMessage = function(e) {
-            if (e.ori1n !== config.oauthd_base) {
+            if (e.origin !== config.oauthd_base) {
               return;
             }
             try {

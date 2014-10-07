@@ -11,10 +11,11 @@
 //     "run_at": "document_start"
 //   }
 // ],
-  "permissions": [ "tabs", "https://docs.google.com/feeds/*",
+  "permissions": [ "tabs",
     "https://www.google.com/accounts/OAuthGetRequestToken",
     "https://www.google.com/accounts/OAuthAuthorizeToken",
-    "https://www.google.com/accounts/OAuthGetAccessToken"
+    "https://www.google.com/accounts/OAuthGetAccessToken",
+    "identity"
   ],
   // "permissions": [
   //   "https://github.com/login/oauth/authorize/token"
@@ -26,4 +27,6 @@
     "scripts": ["eventPage.js"],
     "persistent": false
   },
+  // public key
+  "key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDQADkYGsHBPvV2T+wBFRTCRRAmgP6oHWhKB7OiQXHYi7o/npHtQgrGd6/F4Yad6RLW4vTUjNIPEcmy8pvLrknVGg/W61MXxPkTkSCHnpIptcmBjR4Fsv0ENtSUoyi2RoGxtT6toE+79+8igEHGqxk8vInwCd5dkVehHmdYVGqMn0VeThPMnKnr/AIIsgEBxWBulfwy8Xe4R6199M7dNSPNaB/WkJiLLoETbGv5x6tvILP19WKcqLP2pUl2XxJ+jQRqZ4oAzfbkFQPsGBAB2xU0+MBs+W7Y7WsQ/qxlEi3mfRhGpUPuhH2TkBAwcMCMrLb5RArOSQroaymc0X6e/b9bP5N4l8peIfJ94hXh5ydYGZnud1s95WiH0MeTEInYh0xPuF0BxvGLAuXxpN4hZvaFkE/fDoBwsIPBlhFG8/sG4fCXkNgiqa6tYyBf1R5uWxhmx2RhiB83ryXzK/Y5a7QvX6/K9qPSXsSKLzDLJokgbOLee0xKTSD0C5pDy8+7tBv/IqM2VFJcMqqYxh2tkvx16nlTUhtoP26gB3zPzLROLNBaFMyR4+2/xXFkrSoPAVD+mMKE9eqSGsz3i+sTKyWC24yHBI4HLPqt54b0hNr+MMc7kcZjPlsw74ZfB/9UAa2hLn7dpUvGMr3jVmUpCvXYhxWRoBh+FBaOK3QLIEjaGQ== jzhong@dhcp-3-52.hq.corp.lan"
 }
