@@ -1,11 +1,20 @@
-OAuth.initialize("FNFvZeTMr7igUlJBATyn4zaWPyI");
-
-//Using popup (option 1)
-var results = OAuth.popup('github')
-results.done(function(result) {
-  //use result.access_token in your API request 
-  //or use result.get|post|put|del|patch|me methods (see below)
-})
-results.fail(function (err) {
-  //handle error with err
+$.ajax({
+    dataType: "json",
+    url: "https://api.github.com/users/jacindaz",
+    success: function(json) {
+        githubSuccess();
+        console.log("JSON: " + json + "\n");
+        console.log("Name: ", json["name"]);
+        console.log("Login: ", json["login"]);
+    },
+    error: function(e) { githubFailure() }
 });
+
+function githubSuccess() {
+    console.log("Github ajax success");
+}
+
+function githubFailure() {
+    console.log("Unable to call Github API.");
+    //alert("Unable to call Github API.");
+}
